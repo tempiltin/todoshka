@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .closed {
+            display: none;
+        }
+
+        .open {
+            display: block;
+        }
+
+        button {
+            cursor: pointer;
+            background: yellowgreen;
+            margin-left: 15px;
+            font-size: 120px;
+        }
+
+        #demo {
+            color: white;
+            background-color: #7F7F7F;
+            padding: 10px;
+            font-size: 50px;
+          
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Javascript bilan Dom da ishlash</h1>
+
+
+    <button type="button" onclick="openBtn()">Open !</button>
+    <button type="button" onclick="closeBtn()">Closed !</button>
+
+    <p id="demo"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde nostrum velit tempore nulla illum nobis
+        debitis facilis a asperiores ullam inventore nihil, eaque voluptate, voluptas ducimus eum mollitia repudiandae!
+        Maxime, sit iusto ipsam est minima cum distinctio accusamus necessitatibus dicta autem odio placeat eos
+        provident quis quisquam ea molestiae assumenda!</p>
+
+    <script>
+        var x = document.getElementById("demo");
+        const closeBtn = () =>{
+            x.style.transition = "500ms";
+            x.style.display = "none";
+        }
+        const openBtn = () => x.style.display = "block";
+          // arrow function
+
+    </script>
+</body>
+
+</html>
